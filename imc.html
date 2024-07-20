@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+    
+    <header><h1>Calculadora de IMC</h1></header>
+    
+    <section>
+        <div>
+            Preencha as informações abaixo!
+            <p>Nome: <input type="text" name="Nome" id="nome"></p>
+            <p>Idade: <input type="text" name="Idade" id="idade"></p>
+            <p>Sexo: Masculino <input type="radio" name="radsex" id="masc">
+            Feminino <input type="radio" name="radsex" id="fem"></p>
+            <p>Altura: <input type="number" name="altura" id="altura" step="0.01"></p>
+            <p>Peso: <input type="number" name="peso" id="peso"></p>
+            <p class="button-container"><input type="button" value="Verificar" id="verificar" onclick="verificar()"></p>
+        </div>
+        <br>
+        <div id="res">
+            <p>O resultado aparecerá aqui</p>
+        </div>
+        <br>
+        <div id="divreset" style="display: none;">
+            <p><h3>Deseja fazer um novo cálculo de IMC?</h3></p>
+            <p><input type="button" value="Calcular Novamente" id="resetar" onclick="resetar()"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>&copy; netospadoni</strong></p>
+    </footer>
+    
+    <script src="imc.js"></script>
+</body>
+</html>

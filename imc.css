@@ -1,0 +1,54 @@
+body {
+    background: rgb(73, 114, 252);
+    font: normal 16pt Arial;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background: white;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 2px 2px 10px black;
+}
+
+div#res {
+    text-align: center;
+    background: rgb(247, 242, 234);
+    padding: 15px;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 2px 2px 8px black;
+}
+
+.button-container {
+    text-align: center; /* Centraliza o conteúdo do contêiner */
+    margin-top: 20px;   /* Adiciona uma margem superior se necessário */
+}
+
+input#verificar {
+    background: rgb(102, 92, 241);
+    color: white;
+    padding: 15px;
+    font-size: 15pt;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+div#divreset {
+    text-align: center;
+    
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: white;
+}
