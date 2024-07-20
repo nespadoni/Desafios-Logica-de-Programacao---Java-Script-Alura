@@ -34,7 +34,12 @@ function verificarChute() {
 }
 
 function gerarNumeroAleatorio() {
-    return parseInt(Math.random() * 3 + 1);
+    let numeroEscolhido = parseInt(Math.random() * 3 + 1);
+    if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+        return gerarNumeroAleatorio
+    } else {
+        listaDeNumerosSorteados.push(numeroEscolhido)
+    }
 }
 
 function limparCampo() {
